@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
         fetchDataRx()
     }
 
-
     private fun fetchDataRx() {
         val restfulAPI = HTTPClient(BuildConfig.ENDPOINT);
         val disposable = restfulAPI.getStackService().getQuestions( 15,
