@@ -20,7 +20,7 @@ class QuestionsAdapter(): RecyclerView.Adapter<QuestionsAdapter.QuestionHolder>(
 
     override fun onBindViewHolder(holder: QuestionHolder, position: Int) {
         holder.title.text = ""+questions[position].title
-        holder.link.text = questions[position].link
+        holder.link.text = "Answers "+ questions[position].answer_count + " " + questions[position].link
     }
 
     fun setQuestions(listQuestions:List<Question>){
